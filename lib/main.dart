@@ -60,9 +60,9 @@ Future<void> fetchNoticias() async {
                 return Card(
                   margin: EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(noticia['titulo'] ?? 'Inexistente'),
+                    title: Text(noticia['title'] ?? 'Inexistente'),
                     subtitle: Text(
-                      'Descripción: ${noticia['descripcion'] ?? 'No disponible'}\nFuente: ${noticia['fuente']['nombre'] ?? 'Desconocida'}',
+                      'Descripción: ${noticia['description'] ?? 'No disponible'}\nFuente: ${noticia['source']['name'] ?? 'Desconocida'}',
                     ),
                        leading: noticia!['urlToImage'] != null ? Image.network(noticia!['urlToImage'],
                       width: 50,
